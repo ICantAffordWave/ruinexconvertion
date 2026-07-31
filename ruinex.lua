@@ -3756,7 +3756,8 @@ end
 
 
 doe=0
-while chr.Humanoid.Health>=0 do
+-- might be dumb using a true loop here
+while true do
 	swait()
 	script.Parent=Ruin
 	script.Archivable=false
