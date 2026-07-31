@@ -1,16 +1,15 @@
-local Players = game:GetService("Players")
+local Players = game:GetService("Players") -- fym "value type of boolean cannot be converted to a number"
 
 
 local Plr = Players.LocalPlayer
 
-if Plr == nil then return end
 local LP = Plr
 local Player = LP
 local Mouse,mouse,UserInputService,ContextActionService = LP:GetMouse(), LP:GetMouse(),game:GetService("UserInputService"),game:GetService("ContextActionService")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Cool-Reanimate.lua"))
 --Script under here
-wait(.2)
+wait(7.5)
 rainParts={}
 plr=game.Players.LocalPlayer
 chr=plr.Character
@@ -73,10 +72,11 @@ RJ.C0,RJ.C1=CFrame.new(0,0,0),CFrame.new(0,0,0)
 Neck.C0,Neck.C1=CFrame.new(0,1.5,0),CFrame.new(0,0,0)
 -- hmm
 -- just keep it
---[[local RS=newMotor("Right Shoulder",Torso, RArm, CFrame.new(1.5, 0, 0), CFrame.new(0, 0, 0)) 
+-- nvm it broke itself do not change this
+local RS=newMotor("Right Shoulder",Torso, RArm, CFrame.new(1.5, 0, 0), CFrame.new(0, 0, 0)) 
 local LS=newMotor("Left Hip",Torso, LArm, CFrame.new(-1.5, 0, 0), CFrame.new(0, 0, 0))
 local RH=newMotor("Right Shoulder",Torso, RLeg, CFrame.new(.5, -2, 0), CFrame.new(0, 0, 0))
-local LH=newMotor("Left Hip",Torso, LLeg, CFrame.new(-.5, -2, 0), CFrame.new(0, 0, 0))--]]
+local LH=newMotor("Left Hip",Torso, LLeg, CFrame.new(-.5, -2, 0), CFrame.new(0, 0, 0))
 
 function NoOutline(Part)
 	Part.TopSurface,Part.BottomSurface,Part.LeftSurface,Part.RightSurface,Part.FrontSurface,Part.BackSurface=10,10,10,10,10,10
