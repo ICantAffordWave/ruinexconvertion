@@ -7,7 +7,7 @@ local LP = Plr
 local Player = LP
 local Mouse,mouse,UserInputService,ContextActionService = LP:GetMouse(), LP:GetMouse(),game:GetService("UserInputService"),game:GetService("ContextActionService")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Cool-Reanimate.lua"))
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jskfhggjxu/My-Script/refs/heads/main/Cool-Reanimate.lua"))()
 --Script under here
 wait(7.5)
 rainParts={}
